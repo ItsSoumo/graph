@@ -90,23 +90,6 @@
   let apiKey = "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";
 
   function generateImage() {
-    if (apiKey === "") {
-      apiKey = apiInput.value.trim() || api;
-      if (apiKey === "") {
-        alert("Please enter your OpenAI API key");
-        return;
-      }
-      apiDiv[0].classList.add("hidden");
-      apiDiv[1].classList.add("hidden");
-    }
-    if (text.value === "") {
-      alert("Please enter a value");
-      return;
-    }
-
-    loadingSpinner.classList.remove("hidden");
-    btn.disabled = true;
-
     const data = {
       prompt: text.value,
       n: numImages,
