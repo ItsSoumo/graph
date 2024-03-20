@@ -96,6 +96,41 @@
                         inset 0.313em 0.313em 0.313em rgba(0,0,0,0.1);
           }
 */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #1f1f1f; /* Dark background color */
+            color: white; /* Text color */
+        }
+
+        .logo {
+            width: 50px; /* Adjust logo size as needed */
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .name {
+            font-size: 24px; /* Adjust font size as needed */
+        }
+
+        .options {
+            display: flex;
+            align-items: center;
+        }
+
+        .option {
+            margin-right: 20px;
+            font-size: 18px; /* Adjust font size as needed */
+            cursor: pointer;
+        }
+
+        .option:hover {
+            text-decoration: underline;
+        }
+
+        
         .box{
             width: 450px;
             background: rgba(186, 147, 216, 0.7);
@@ -238,6 +273,18 @@
     </style>
 </head>
 <body>
+    <header class="header">
+        <div>
+            <img src="graph/Krish.jpg" alt="Logo" class="logo">
+            <span class="name">TOFU API</span>
+        </div>
+        <div class="options">
+            <div class="option">Home</div>
+            <div class="option"><a href="http://tofu-api.onrender.com/docs/">Docs</a></div>
+            <div class="option">Contract</div>
+            <div class="option">Support</div>
+        </div>
+    </header>
     <div class="box">
         <img alt="LOGO" class="topdp-1">
         <h1 class="toph-1">TOFU API</h1>
