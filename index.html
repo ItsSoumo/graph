@@ -10,48 +10,12 @@
         @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
-        /*
-        body {
-            /* background: url(https://te.legra.ph/file/e98afa90902e3c238bbdb.png); 
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-size: 200% 200%;
-            background-attachment: fixed;
-            background-image: linear-gradient(45deg, #3498db 0%, #8e44ad 55%, #3498db 100%);
-            animation: gradient 5s ease infinite;
-        }
 
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-        .square {
-          position: absolute;
-          border: 0.125em solid #ffffff; /* Change the border color to white 
-          background-color: transparent;
-          opacity: 0.5;
-          z-index: -1;
-        }
-        */
-        
         body {
-            /* Shiny Black Background */
             background-color: #000000;
             background-image: radial-gradient(circle at 20% 50%, rgba(255, 215, 0, 0.8), transparent), radial-gradient(circle at 80% 50%, rgba(255, 215, 0, 0.8), transparent);
             background-size: 200% 100%;
             animation: shine 5s linear infinite;
-            /* Rest of your existing CSS */
             margin: 0;
             height: 100vh;
             display: flex;
@@ -67,7 +31,7 @@
 
         .square {
           position: absolute;
-          border: 0.125em solid #ffffff; /* Change the border color to white */
+          border: 0.125em solid #ffffff;
           background-color: transparent;
           opacity: 0.5;
           z-index: -1;
@@ -75,61 +39,12 @@
 
         .circle {
           position: absolute;
-          border: 0.125em solid #ffffff; /* Change the border color to white */
+          border: 0.125em solid #ffffff;
           background-color: transparent;
           opacity: 0.5;
           border-radius: 50%;
           z-index: -1;
         }
-/*
-        .box{
-            width: 450px;
-            background: rgba(76, 175, 80, 0.8); rgba(0, 0, 0, 0.7); /*rgba(216, 191, 216, 0.3); rgba(0, 0, 0, 0.3);/
-            padding: 2.5em;
-            text-align: center;
-            margin: auto;
-            margin-top: 5%;
-            border-radius: 15%;
-            box-shadow: -0.938em -0.938em 0.938em rgba(62, 16, 177, 0.2),
-                        0.938em 0.938em 0.938em rgba(0,0,0,0.1),
-                        inset -0.313em -0.313em 0.313em rgba(255, 255, 255, 0.2),
-                        inset 0.313em 0.313em 0.313em rgba(0,0,0,0.1);
-          }
-*/
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background-color: #1f1f1f; /* Dark background color */
-            color: white; /* Text color */
-        }
-
-        .logo {
-            width: 50px; /* Adjust logo size as needed */
-            height: 50px;
-            margin-right: 10px;
-        }
-
-        .name {
-            font-size: 24px; /* Adjust font size as needed */
-        }
-
-        .options {
-            display: flex;
-            align-items: center;
-        }
-
-        .option {
-            margin-right: 20px;
-            font-size: 18px; /* Adjust font size as needed */
-            cursor: pointer;
-        }
-
-        .option:hover {
-            text-decoration: underline;
-        }
-
         
         .box{
             width: 450px;
@@ -146,7 +61,7 @@
           }
           @media screen and (max-width: 600px) {
               .box {
-                  width: 90%; /* Increase the width on small screens */
+                  width: 90%;
                   padding: 10px;
               }
           }
@@ -273,18 +188,6 @@
     </style>
 </head>
 <body>
-    <header class="header">
-        <div>
-            <img src="graph/Krish.jpg" alt="Logo" class="logo">
-            <span class="name">TOFU API</span>
-        </div>
-        <div class="options">
-            <div class="option">Home</div>
-            <div class="option"><a href="http://tofu-api.onrender.com/docs/">Docs</a></div>
-            <div class="option">Contract</div>
-            <div class="option">Support</div>
-        </div>
-    </header>
     <div class="box">
         <img alt="LOGO" class="topdp-1">
         <h1 class="toph-1">TOFU API</h1>
