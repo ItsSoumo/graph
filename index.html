@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sᴏᴜᴍᴏ API</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <!-- <link rel="stylesheet" href="static/style.css"> -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
-
+        /*
         body {
-            /* background: url(https://te.legra.ph/file/e98afa90902e3c238bbdb.png); */
+            /* background: url(https://te.legra.ph/file/e98afa90902e3c238bbdb.png); 
             margin: 0;
             height: 100vh;
             display: flex;
@@ -34,6 +33,35 @@
             }
             100% {
                 background-position: 0% 50%;
+            }
+        }
+
+        .square {
+          position: absolute;
+          border: 0.125em solid #ffffff; /* Change the border color to white 
+          background-color: transparent;
+          opacity: 0.5;
+          z-index: -1;
+        }
+        */
+        
+        body {
+            /* Shiny Black Background */
+            background-color: #000000;
+            background-image: radial-gradient(circle at 20% 50%, rgba(255, 215, 0, 0.8), transparent), radial-gradient(circle at 80% 50%, rgba(255, 215, 0, 0.8), transparent);
+            background-size: 200% 100%;
+            animation: shine 5s linear infinite;
+            /* Rest of your existing CSS */
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @keyframes shine {
+            to {
+                background-position: 200% 0;
             }
         }
 
